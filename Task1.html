@@ -1,0 +1,186 @@
+<!-- variable declaration               task 1-->
+<!-- <html>
+    <head>
+        <title>
+            Variable declaration
+        </title>
+    </head>
+    <body>
+        <h1>Variable Declaration</h1>
+        <script language="javascript" type="text/javascript">
+            
+                var name="kalyani"
+                let age=18
+                const city="Anakapalli"
+                
+                console.log(name)
+                console.log(age)
+                console.log(city)
+        
+        </script>
+    </body>
+</html> -->
+                               
+<html>
+    <head>
+        <title>function calling</title>
+    
+
+    </head>
+    <body>
+         <p id="text">hello world</p>
+        <button onclick="ChangeText()">Click Me</button>
+        <button onclick="addContent()">add content</button>
+        <button onclick="removeContent()">remove content</button>
+        <div id="container"></div> 
+        <p id="kalyani">ready to change</p>
+        
+        <button onclick="changeStyle()">click me for change</button>
+        <p id="toggle">toggling paragraph</p>
+        <button onclick="toggleStyle()">click for toggle</button>
+        <p id="box" style="color: brown; font-size: 16px;">DYnamic styling</p>
+        <button onclick="InlineStyling()">Inlinestyle</button>
+        <p id="execute">event action</p>
+        <button onclick="Eventoccur()">click me</button>
+        <p id="mouseovers">Mouse overings</p>
+        <button onclick="mouseEvents()">mouse overs</button>
+        <form onsubmit="handleSubmit()">
+            <input type="text" placeholder="enter name">
+            <button type="submit" >Submit</button>
+
+        </form>
+        <form onsubmit="return validateForm()">
+            <label>Name:</label>
+            <input type="text" id="username"><br><br>
+
+            <label>Email:</label>
+             <input type="text" id="email"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <button onclick="window.print()">Print Page</button>
+        <script>
+            //var a
+            //var b
+            // ---------------------task2
+            /*
+            function sayhii(){
+                console.log("this is a function call");
+                    
+            }
+            const greet= () => {
+                console.log("hello,there");
+            };
+            greet();
+        
+            sayhii();
+            function addition(a,b){
+                return a+b;
+            }
+            document.write("sum-",addition(4,3));
+            function subtraction(a,b) {
+                return a-b
+            }
+            // document.write("\nsubtraction-",subtraction(34,4))*/
+
+            //---------------------task-3
+
+            
+            // alert("hii this is an alert")
+            // var name=prompt("Enter with name");
+            // document.write(name)
+            // console.log("hello"+name+"!")
+            
+            // ------------------task 4
+
+            
+
+            // function ChangeText(){
+            //     document.getElementById("text").innerHTML="content chaged";
+            // }
+            // function addContent(){
+            //     document.getElementById("container").innerHTML+="<p>This is new content</p>";
+            // }
+            // function removeContent(){
+            //     document.getElementById("container").innerHTML="";
+            // }
+
+            
+        // ---------------task 5
+        // function changeStyle(){
+        //     let el=document.getElementById("kalyani");
+        //     el.style.color="black";
+        //     el.style.fontSize="50px";
+        //     el.style.backgroundColor="blue";
+        // }
+        // function toggleStyle(){
+        //     let el=document.getElementById("toggle");
+        //     if(el.style.backgroundColor === "blue"){
+        //         el.style.backgroundColor="green";
+        //         el.style.fontSize="30px";
+        //     }
+        //     else{
+        //         el.style.backgroundColor="blue";
+        //         el.style.fontSize="20px";
+        //     }
+        // }
+        // function InlineStyling(){
+        //     let el=document.getElementById("box");
+        //     el.style.color="purple";
+        //     el.style.fontSize="30px";
+        //     el.style.backgroundColor="yellow";
+        // }
+        //----------------------task 6
+
+        // function Eventoccur(){
+        //     alert("hello buddies!")
+
+        // }
+        // function mouseEvents(){
+        //     let el=document.getElementById("mouseovers");
+        //     el.onmouseover=function(){
+        //         el.style.backgroundColor="pink";
+        //         el.style.fontSize="30px";
+        //     };
+
+
+        //     el.onmouseout= function(){
+        //         el.style.backgroundColor="red";
+        //          el.style.fontSize="30px";
+        //     };
+        // }
+        // function handleSubmit(){
+        //     console.log("Form submitted successfully")
+        // }
+            //-----------------task 7
+            let name=prompt("enter your name:");
+            
+            if (name){
+                document.write("hello"+ name );
+            }
+
+        function validateForm() {
+            let name = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+
+            if (name === "") {
+                alert("Name is required");
+                return false;
+            }
+
+            if (!email.includes("@")) {
+                alert("Enter a valid email");
+                return false;
+            }
+
+            alert("Form submitted successfully");
+            return true;
+}
+
+
+        </script>
+       
+        
+    </body>
+
+</html>
